@@ -37,6 +37,9 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
 ## Remove junk
 sudo apt-get remove ubuntu-web-launchers thunderbird rhythmbox -y
+sudo apt-get remove -qqy software-center
+sudo apt-get remove -qqy update-notifier
+sudo apt purge -qqy snapd
 
 ## Multimedia
 sudo apt-get install -y gimp scribus
