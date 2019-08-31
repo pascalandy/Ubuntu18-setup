@@ -14,9 +14,16 @@ openssh-server sshfs gedit-plugin-text-size nano \
 ubuntu-restricted-extras gthumb gnome-tweaks \
 gnome-tweak-tool qt5-style-plugins spell synaptic -yy 
 
-## Multimedia
+# Multimedia
 sudo apt-get install -y gimp mpv vlc audacity lame simplescreenrecorder
 # scribus
+
+# Brew
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 
 # Add me to any groups I might need to be a part of:
 sudo adduser $USER vboxusers
