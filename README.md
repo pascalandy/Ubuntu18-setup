@@ -3,5 +3,5 @@
 Use the following command:
 
 ```
-wget https://raw.githubusercontent.com/pascalandy/ubuntu-scripts/master/setup.sh && sudo chmod +x setup.sh && ./setup.sh
+wget https://raw.githubusercontent.com/pascalandy/ubuntu-scripts/master/run_newinstall.sh && sudo chmod +x run_newinstall.sh && ./run_newinstall.sh
 ```
